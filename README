@@ -1,0 +1,4 @@
+This project contains source to demonstrate how you can get text in an Android view to resize to fill the view.
+
+The example shows how to use getTextBounds() from the android Paint class to determine the size of the text will be when drawn.  With this information you can calculate a textSize and textScaleX to use to get your text the size you want.
+
