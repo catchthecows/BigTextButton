@@ -9,7 +9,7 @@
 		android:layout_height="0dip"
 		android:layout_width="fill_parent"
 		android:layout_weight=".5"
-		android:text="Something Long"
+		android:text="Long &amp; Wide"
 		android:singleLine="true"/>
 	<LinearLayout
 		android:layout_width="fill_parent"
@@ -20,14 +20,14 @@
 			android:layout_height="fill_parent"
 			android:layout_width="0dip"
 			android:layout_weight=".5"
-			android:text = "This is kind of Silly"
+			android:text = "Stop!"
 			android:singleLine="true"/>
 		<com.sample.BigTextButton
 	    	android:id="@+id/progress"
 			android:layout_height="fill_parent"
 			android:layout_width="0dip"
 			android:layout_weight=".5"
-			android:text = "GO!"
+			android:text = "Go!"
 			android:singleLine="true"/>
 	</LinearLayout>
 </LinearLayout>
