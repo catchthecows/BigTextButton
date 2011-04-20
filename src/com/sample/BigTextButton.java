@@ -106,7 +106,7 @@ public class BigTextButton extends ImageButton {
 		// get the height that would have been produced
 		int h = bounds.bottom - bounds.top;
 
-		// make the text text up 80% of the height
+		// make the text text up 70% of the height
 		float target = (float)mViewHeight*.7f;
 		
 		// figure out what textSize setting would create that height
