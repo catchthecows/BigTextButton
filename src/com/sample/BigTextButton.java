@@ -96,7 +96,8 @@ public class BigTextButton extends ImageButton {
 	 * determine the proper text size to use to fill the full height
 	 */
 	void adjustTextSize() {
-		if (mText.isEmpty()) {
+        // using .isEmpty() isn't backward compatible with older API versions
+		if (mText.length() == 0) {
 			return;
 		}
 		mTextPaint.setTextSize(100);
@@ -138,7 +139,11 @@ public class BigTextButton extends ImageButton {
 		// this is done in two steps in case the
 		// point size change affects the width boundary
 		adjustTextScale();
-	}
+        // we have changed this view, now we need to redraw
+        // Note: redraw is not automatic if you are sending button clicks to this object
+        // programmatically.
+        invalidate();
+    }
 
 	@Override
 	protected void onDraw(Canvas canvas) {
